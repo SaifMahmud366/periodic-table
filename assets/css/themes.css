@@ -1,0 +1,566 @@
+/* ==========================================================================
+   Elementum — theme palettes
+   Daylight, Dark, Cute & Cozy, and Professional.
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   Daylight — clean, bright, high contrast
+   -------------------------------------------------------------------------- */
+[data-theme="light"] {
+  color-scheme: light;
+
+  --bg: #f5f7fb;
+  --body-glow:
+    radial-gradient(ellipse 58% 44% at 8% -10%, rgba(99, 102, 241, 0.14), transparent 62%),
+    radial-gradient(ellipse 48% 38% at 98% 2%, rgba(34, 211, 238, 0.12), transparent 58%),
+    radial-gradient(ellipse 42% 28% at 48% 108%, rgba(244, 114, 182, 0.05), transparent 70%);
+
+  --surface: #ffffff;
+  --surface-raised: #ffffff;
+  --surface-muted: #f6f8fb;
+  --text: #101828;
+  --text-soft: #475467;
+  --muted: #667085;
+
+  --border: #e6e9ef;
+  --border-strong: #d2d8e2;
+  --header-bg: rgba(247, 249, 252, 0.82);
+  --header-border: rgba(16, 24, 40, 0.06);
+
+  --accent: #4f46e5;
+  --accent-strong: #4338ca;
+  --accent-contrast: #ffffff;
+  --accent-soft: rgba(79, 70, 229, 0.09);
+  --accent-border: rgba(79, 70, 229, 0.16);
+  --hero-gradient: linear-gradient(100deg, #4f46e5 0%, #0ea5e9 56%, #06b6d4 100%);
+
+  --shadow-xs: 0 1px 2px rgba(16, 24, 40, 0.06);
+  --shadow-sm: 0 3px 10px rgba(16, 24, 40, 0.05);
+  --shadow-md: 0 18px 40px -26px rgba(16, 24, 40, 0.24), 0 2px 6px rgba(16, 24, 40, 0.03);
+  --shadow-modal: 0 45px 90px -32px rgba(15, 23, 42, 0.42);
+  --brand-shadow: 0 7px 16px -6px rgba(79, 70, 229, 0.45);
+
+  --tooltip-bg: #111827;
+  --tooltip-text: #ffffff;
+  --selection-bg: #c7d2fe;
+  --selection-text: #1e1b4b;
+
+  --tile-bg-s: 78%;
+  --tile-bg-l: 94%;
+  --tile-border-s: 55%;
+  --tile-border-l: 80%;
+  --tile-border-a: 0.55;
+  --tile-border-hover-l: 56%;
+  --tile-ink: #1b2433;
+  --tile-name: #273142;
+  --tile-muted: #687385;
+  --tile-symbol-s: 58%;
+  --tile-symbol-l: 37%;
+  --tile-glow-l: 40%;
+  --tile-glow-a: 0.24;
+
+  --dot-s: 70%;
+  --dot-l: 55%;
+  --chip-active-s: 76%;
+  --chip-active-l: 93%;
+  --drop-ink: #1b2433;
+
+  --modal-light-1: 47%;
+  --modal-light-2: 32%;
+  --modal-overlay-1: rgba(9, 14, 28, 0.14);
+  --modal-overlay-2: rgba(9, 14, 28, 0.28);
+  --backdrop: rgba(15, 23, 42, 0.48);
+
+  --heart-color: #e11d48;
+}
+
+/* --------------------------------------------------------------------------
+   Dark — deep, modern, and softly luminous
+   -------------------------------------------------------------------------- */
+[data-theme="dark"] {
+  color-scheme: dark;
+
+  --bg: #070b14;
+  --body-glow:
+    radial-gradient(ellipse 60% 45% at 6% -8%, rgba(99, 102, 241, 0.24), transparent 60%),
+    radial-gradient(ellipse 50% 38% at 96% 2%, rgba(34, 211, 238, 0.13), transparent 58%),
+    radial-gradient(ellipse 44% 30% at 52% 108%, rgba(168, 85, 247, 0.08), transparent 70%);
+
+  --surface: #0f1624;
+  --surface-raised: #142033;
+  --surface-muted: #131c2d;
+  --text: #eef3ff;
+  --text-soft: #b8c3d9;
+  --muted: #8b98b0;
+
+  --border: #222d42;
+  --border-strong: #33415a;
+  --header-bg: rgba(8, 12, 21, 0.78);
+  --header-border: rgba(255, 255, 255, 0.06);
+
+  --accent: #8b9cff;
+  --accent-strong: #a5b4fc;
+  --accent-contrast: #0a0f1a;
+  --accent-soft: rgba(139, 156, 255, 0.12);
+  --accent-border: rgba(139, 156, 255, 0.24);
+  --hero-gradient: linear-gradient(100deg, #a5b4fc 0%, #67e8f9 58%, #5eead4 100%);
+
+  --shadow-xs: 0 1px 2px rgba(0, 0, 0, 0.3);
+  --shadow-sm: 0 4px 14px rgba(0, 0, 0, 0.26);
+  --shadow-md: 0 22px 48px -24px rgba(0, 0, 0, 0.75), 0 1px 0 rgba(255, 255, 255, 0.03) inset;
+  --shadow-modal: 0 50px 110px -30px rgba(0, 0, 0, 0.9);
+  --brand-shadow: 0 8px 22px -8px rgba(99, 102, 241, 0.65);
+
+  --tooltip-bg: #eef3ff;
+  --tooltip-text: #0b1220;
+  --selection-bg: #4338ca;
+  --selection-text: #eef3ff;
+
+  --tile-bg-s: 38%;
+  --tile-bg-l: 16%;
+  --tile-border-s: 30%;
+  --tile-border-l: 30%;
+  --tile-border-a: 0.62;
+  --tile-border-hover-l: 62%;
+  --tile-ink: #eef3ff;
+  --tile-name: #e3e9f7;
+  --tile-muted: #aab4c8;
+  --tile-symbol-s: 55%;
+  --tile-symbol-l: 76%;
+  --tile-glow-l: 55%;
+  --tile-glow-a: 0.35;
+
+  --dot-s: 55%;
+  --dot-l: 62%;
+  --chip-active-s: 34%;
+  --chip-active-l: 20%;
+  --drop-ink: #f0f4ff;
+
+  --modal-light-1: 43%;
+  --modal-light-2: 28%;
+  --modal-overlay-1: rgba(2, 6, 16, 0.16);
+  --modal-overlay-2: rgba(2, 6, 16, 0.3);
+  --backdrop: rgba(2, 6, 16, 0.68);
+
+  --heart-color: #fb7185;
+}
+
+[data-theme="dark"] .brand__mark,
+[data-theme="dark"] .modal__close,
+[data-theme="dark"] .github-button {
+  border: 1px solid rgba(255, 255, 255, 0.07);
+}
+
+[data-theme="dark"] .theme-btn[aria-pressed="true"] {
+  background: var(--surface-raised);
+  box-shadow: 0 0 0 1px var(--border), 0 4px 12px rgba(0, 0, 0, 0.25);
+}
+
+[data-theme="dark"] .github-button {
+  background: var(--surface-raised);
+}
+
+[data-theme="dark"] .search__kbd {
+  background: var(--surface-muted);
+}
+
+/* --------------------------------------------------------------------------
+   Cute & Cozy — soft pastels, rounded corners, playful type
+   Category colors are intentionally disabled in this theme.
+   -------------------------------------------------------------------------- */
+[data-theme="cute"] {
+  color-scheme: light;
+
+  --font-sans: "Fredoka", "Inter", system-ui, sans-serif;
+  --font-display: "Fredoka", "Outfit", system-ui, sans-serif;
+
+  --bg: #fff8f4;
+  --body-glow:
+    radial-gradient(circle at 8% 7%, rgba(255, 194, 214, 0.48), transparent 27%),
+    radial-gradient(circle at 92% 5%, rgba(190, 238, 226, 0.56), transparent 26%),
+    radial-gradient(circle at 76% 88%, rgba(226, 217, 255, 0.36), transparent 28%),
+    radial-gradient(circle at 18% 84%, rgba(255, 229, 189, 0.3), transparent 24%);
+
+  --surface: #fffdfb;
+  --surface-raised: #fffaf7;
+  --surface-muted: #fff4f0;
+  --text: #523a45;
+  --text-soft: #715662;
+  --muted: #957c87;
+
+  --border: #f1dfe6;
+  --border-strong: #e7c9d5;
+  --header-bg: rgba(255, 250, 247, 0.83);
+  --header-border: rgba(232, 111, 156, 0.12);
+
+  --accent: #e86f9c;
+  --accent-strong: #d95c8b;
+  --accent-contrast: #ffffff;
+  --accent-soft: rgba(232, 111, 156, 0.12);
+  --accent-border: rgba(232, 111, 156, 0.22);
+  --hero-gradient: linear-gradient(100deg, #e86f9c 0%, #f1a25c 52%, #5fc4b5 100%);
+
+  --shadow-xs: 0 1px 3px rgba(150, 90, 115, 0.08);
+  --shadow-sm: 0 4px 16px rgba(150, 90, 115, 0.08);
+  --shadow-md: 0 20px 42px -28px rgba(150, 90, 115, 0.28);
+  --shadow-modal: 0 42px 90px -32px rgba(130, 80, 100, 0.4);
+  --brand-shadow: 0 7px 16px -6px rgba(232, 111, 156, 0.38);
+
+  --tooltip-bg: #523a45;
+  --tooltip-text: #fff8f4;
+  --selection-bg: #ffd2e1;
+  --selection-text: #523a45;
+
+  --radius-tile: 12px;
+  --radius-card: 26px;
+  --radius-control: 14px;
+
+  --tile-bg-s: 90%;
+  --tile-bg-l: 94%;
+  --tile-border-s: 60%;
+  --tile-border-l: 86%;
+  --tile-border-a: 0.8;
+  --tile-border-hover-l: 70%;
+  --tile-ink: #5c3c4c;
+  --tile-name: #5c3c4c;
+  --tile-muted: #8b6b79;
+  --tile-symbol-s: 55%;
+  --tile-symbol-l: 48%;
+  --tile-glow-l: 70%;
+  --tile-glow-a: 0.28;
+
+  --dot-s: 60%;
+  --dot-l: 70%;
+  --chip-active-s: 70%;
+  --chip-active-l: 94%;
+  --drop-ink: #5c3c4c;
+
+  --modal-light-1: 84%;
+  --modal-light-2: 92%;
+  --modal-overlay-1: transparent;
+  --modal-overlay-2: transparent;
+  --backdrop: rgba(82, 58, 69, 0.38);
+
+  --heart-color: #ef5f88;
+}
+
+[data-theme="cute"] .hero h1,
+[data-theme="cute"] .brand__name,
+[data-theme="cute"] .stat__value,
+[data-theme="cute"] .table-card__head h2,
+[data-theme="cute"] .modal__title {
+  font-weight: 600;
+  letter-spacing: -0.035em;
+}
+
+[data-theme="cute"] .hero h1 {
+  line-height: 1.02;
+}
+
+[data-theme="cute"] .hero__accent {
+  background: linear-gradient(100deg, #e86f9c 0%, #ef9b73 50%, #5fc4b5 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+[data-theme="cute"] .hero__stats,
+[data-theme="cute"] .toolbar,
+[data-theme="cute"] .table-card {
+  border-color: rgba(232, 111, 156, 0.14);
+}
+
+[data-theme="cute"] .theme-btn[aria-pressed="true"] {
+  background: #ffe7ef;
+  color: var(--accent-strong);
+  box-shadow: 0 2px 0 rgba(232, 111, 156, 0.15);
+}
+
+[data-theme="cute"] .github-button {
+  border-color: #f0d7e1;
+  background: #fffaf7;
+}
+
+[data-theme="cute"] .github-button:hover {
+  border-color: var(--accent);
+  box-shadow: 0 4px 0 rgba(232, 111, 156, 0.12);
+}
+
+[data-theme="cute"] .search,
+[data-theme="cute"] .select-wrap select {
+  background: #fff6f2;
+}
+
+[data-theme="cute"] .search:focus-within {
+  background: #fffdfb;
+}
+
+/* Cute pastel tiles — deliberately not category colors */
+[data-theme="cute"] .element {
+  border-color: var(--cute-border);
+  border-radius: 13px;
+  background: var(--cute-bg);
+  box-shadow: 0 3px 0 var(--cute-shadow);
+  color: var(--cute-ink);
+}
+
+[data-theme="cute"] .element[data-block="s"] {
+  --cute-bg: #ffe3ec;
+  --cute-border: #f7c6d5;
+  --cute-shadow: #f4d2de;
+  --cute-ink: #6a4052;
+}
+
+[data-theme="cute"] .element[data-block="p"] {
+  --cute-bg: #e3f6ea;
+  --cute-border: #c3e8d2;
+  --cute-shadow: #d4eddd;
+  --cute-ink: #3f5f52;
+}
+
+[data-theme="cute"] .element[data-block="d"] {
+  --cute-bg: #fff0d3;
+  --cute-border: #f0d7a6;
+  --cute-shadow: #f4e3c4;
+  --cute-ink: #6b5536;
+}
+
+[data-theme="cute"] .element[data-block="f"] {
+  --cute-bg: #eae4ff;
+  --cute-border: #d4c8f3;
+  --cute-shadow: #ddd5f5;
+  --cute-ink: #54456c;
+}
+
+[data-theme="cute"] .element__symbol,
+[data-theme="cute"] .element__name {
+  color: var(--cute-ink);
+}
+
+[data-theme="cute"] .element__symbol {
+  font-weight: 600;
+}
+
+[data-theme="cute"] .element__number,
+[data-theme="cute"] .element__mass {
+  color: #8b6b79;
+}
+
+[data-theme="cute"] .element:hover {
+  border-color: #eaa0b8;
+  box-shadow:
+    0 13px 22px -12px rgba(232, 111, 156, 0.5),
+    0 4px 0 #efc7d6;
+}
+
+[data-theme="cute"] .element:focus-visible {
+  box-shadow:
+    0 10px 22px -12px rgba(232, 111, 156, 0.5),
+    0 0 0 4px rgba(232, 111, 156, 0.16);
+}
+
+[data-theme="cute"] .series-marker {
+  border-color: #efd2c4;
+  background: #fff1e7;
+  color: #92717d;
+}
+
+[data-theme="cute"] .series-marker:hover {
+  border-color: #e3b7a4;
+  background: #ffe9dc;
+}
+
+[data-theme="cute"] .legend__list,
+[data-theme="cute"] .legend__hint {
+  display: none;
+}
+
+[data-theme="cute"] .legend__note {
+  display: flex;
+}
+
+[data-theme="cute"] .legend__head {
+  margin-bottom: 0;
+}
+
+/* Cute modal uses block pastels, never category colors */
+[data-theme="cute"] .modal__visual {
+  background: linear-gradient(155deg, #ffe2eb, #fff4f7);
+  color: #5c3c4c;
+}
+
+[data-theme="cute"] .modal__visual[data-block="p"] {
+  background: linear-gradient(155deg, #d9f4e4, #f2fbf6);
+}
+
+[data-theme="cute"] .modal__visual[data-block="d"] {
+  background: linear-gradient(155deg, #ffe9c2, #fff8e9);
+}
+
+[data-theme="cute"] .modal__visual[data-block="f"] {
+  background: linear-gradient(155deg, #e4dbff, #f5f1ff);
+}
+
+[data-theme="cute"] .modal__visual::before {
+  border-color: rgba(92, 58, 76, 0.11);
+}
+
+[data-theme="cute"] .modal__visual::after {
+  border-color: rgba(92, 58, 76, 0.06);
+}
+
+[data-theme="cute"] .modal__number,
+[data-theme="cute"] .modal__category {
+  border-color: rgba(92, 58, 76, 0.13);
+  background: rgba(255, 255, 255, 0.45);
+  color: #5c3c4c;
+}
+
+[data-theme="cute"] .modal__symbol {
+  text-shadow: 0 12px 28px rgba(120, 75, 95, 0.12);
+}
+
+[data-theme="cute"] .modal__mass {
+  color: #8b6b79;
+}
+
+[data-theme="cute"] .modal__visual .modal__category {
+  border-radius: var(--radius-pill);
+}
+
+/* --------------------------------------------------------------------------
+   Professional — restrained, editorial, and quietly elegant
+   -------------------------------------------------------------------------- */
+[data-theme="professional"] {
+  color-scheme: light;
+
+  --font-display: "Fraunces", Georgia, "Times New Roman", serif;
+
+  --bg: #f4f2ed;
+  --body-glow:
+    radial-gradient(ellipse 54% 40% at 8% -8%, rgba(45, 94, 80, 0.08), transparent 62%),
+    radial-gradient(ellipse 46% 36% at 96% 0%, rgba(150, 126, 82, 0.1), transparent 60%);
+
+  --surface: #fcfbf8;
+  --surface-raised: #fffefa;
+  --surface-muted: #f1efe9;
+  --text: #1f2a2e;
+  --text-soft: #4b595e;
+  --muted: #6f7977;
+
+  --border: #e2ded4;
+  --border-strong: #d1cbbd;
+  --header-bg: rgba(247, 245, 240, 0.86);
+  --header-border: #e4e0d6;
+
+  --accent: #2d5e50;
+  --accent-strong: #244c41;
+  --accent-contrast: #ffffff;
+  --accent-soft: rgba(45, 94, 80, 0.08);
+  --accent-border: rgba(45, 94, 80, 0.16);
+  --hero-gradient: linear-gradient(100deg, #2d5e50 0%, #5d7c64 58%, #8b7c55 100%);
+
+  --shadow-xs: 0 1px 1px rgba(31, 42, 46, 0.04);
+  --shadow-sm: 0 2px 4px rgba(31, 42, 46, 0.04);
+  --shadow-md: 0 12px 32px -26px rgba(31, 42, 46, 0.35);
+  --shadow-modal: 0 36px 72px -32px rgba(31, 42, 46, 0.4);
+  --brand-shadow: 0 5px 12px -6px rgba(45, 94, 80, 0.35);
+
+  --tooltip-bg: #1f2a2e;
+  --tooltip-text: #fcfbf8;
+  --selection-bg: #cfdcd5;
+  --selection-text: #1f2a2e;
+
+  --radius-tile: 4px;
+  --radius-card: 8px;
+  --radius-control: 5px;
+
+  --tile-bg-s: 45%;
+  --tile-bg-l: 91%;
+  --tile-border-s: 30%;
+  --tile-border-l: 78%;
+  --tile-border-a: 0.7;
+  --tile-border-hover-l: 58%;
+  --tile-ink: #263236;
+  --tile-name: #2c3b3f;
+  --tile-muted: #77796f;
+  --tile-symbol-s: 32%;
+  --tile-symbol-l: 31%;
+  --tile-glow-l: 30%;
+  --tile-glow-a: 0.16;
+
+  --dot-s: 30%;
+  --dot-l: 50%;
+  --chip-active-s: 38%;
+  --chip-active-l: 90%;
+  --drop-ink: #263236;
+
+  --modal-light-1: 43%;
+  --modal-light-2: 29%;
+  --modal-overlay-1: rgba(20, 25, 20, 0.18);
+  --modal-overlay-2: rgba(20, 25, 20, 0.34);
+  --backdrop: rgba(31, 42, 46, 0.42);
+
+  --heart-color: #a65d4e;
+}
+
+[data-theme="professional"] .hero h1 {
+  font-weight: 500;
+  letter-spacing: -0.035em;
+  line-height: 1.03;
+}
+
+[data-theme="professional"] .hero__accent {
+  background: none;
+  -webkit-text-fill-color: var(--accent);
+  color: var(--accent);
+}
+
+[data-theme="professional"] .brand__name {
+  font-weight: 600;
+  letter-spacing: -0.025em;
+}
+
+[data-theme="professional"] .brand__tagline {
+  letter-spacing: 0.1em;
+}
+
+[data-theme="professional"] .table-card__head h2 {
+  font-weight: 550;
+  letter-spacing: -0.015em;
+}
+
+[data-theme="professional"] .theme-switcher,
+[data-theme="professional"] .github-button,
+[data-theme="professional"] .search,
+[data-theme="professional"] .select-wrap select,
+[data-theme="professional"] .no-results,
+[data-theme="professional"] .no-results__reset,
+[data-theme="professional"] .reset-button,
+[data-theme="professional"] .search__kbd {
+  border-radius: 4px;
+}
+
+[data-theme="professional"] .theme-btn {
+  border-radius: 3px;
+}
+
+[data-theme="professional"] .element__symbol {
+  font-weight: 600;
+  letter-spacing: -0.015em;
+}
+
+[data-theme="professional"] .modal__visual {
+  background:
+    linear-gradient(160deg, var(--modal-overlay-1), var(--modal-overlay-2)),
+    radial-gradient(110% 90% at 15% 0%, rgba(255, 255, 255, 0.16), transparent 52%),
+    linear-gradient(155deg, hsl(var(--cat-h) 40% var(--modal-light-1)), hsl(calc(var(--cat-h) + 30) 36% var(--modal-light-2)));
+}
+
+[data-theme="professional"] .modal__title {
+  font-weight: 550;
+  letter-spacing: -0.02em;
+}
+
+[data-theme="professional"] .element {
+  border-radius: 3px;
+}

@@ -1,0 +1,615 @@
+/* ==========================================================================
+   Elementum — responsive rules
+   Desktop → tablet → mobile.
+   ========================================================================== */
+
+/* --- Large tablets and small laptops ------------------------------------- */
+@media (max-width: 1180px) {
+  .hero__inner {
+    gap: 36px;
+  }
+
+  .hero__stats {
+    padding: 16px 18px;
+  }
+
+  .toolbar {
+    flex-wrap: wrap;
+  }
+
+  .search {
+    flex: 1 1 340px;
+  }
+
+  .toolbar__meta {
+    margin-left: auto;
+  }
+
+  .scroll-hint {
+    display: inline-flex;
+  }
+}
+
+/* --- Tablets ------------------------------------------------------------- */
+@media (max-width: 960px) {
+  :root {
+    --header-height: 70px;
+  }
+
+  .hero__inner {
+    grid-template-columns: 1fr;
+    align-items: start;
+    gap: 28px;
+  }
+
+  .hero h1 {
+    max-width: 20ch;
+  }
+
+  .hero__stats {
+    justify-self: start;
+  }
+
+  .toolbar {
+    gap: 9px;
+  }
+
+  .search {
+    flex-basis: 100%;
+  }
+
+  .filter {
+    flex: 1;
+  }
+
+  .filter .select-wrap {
+    flex: 1;
+  }
+
+  .filter .select-wrap select {
+    width: 100%;
+  }
+
+  .toolbar__meta {
+    min-width: 0;
+    margin-left: auto;
+  }
+
+  .table-card__foot {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .footer__copy {
+    font-size: 11px;
+  }
+}
+
+/* --- Small tablets / large phones ---------------------------------------- */
+@media (max-width: 780px) {
+  .brand__tagline {
+    display: none;
+  }
+
+  .hero {
+    padding-block: 34px 28px;
+  }
+
+  .hero__lede {
+    margin-top: 16px;
+  }
+
+  .hero__stats {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .stat {
+    flex: 1;
+  }
+
+  .stat__divider {
+    flex: none;
+  }
+
+  .table-card {
+    padding: 13px;
+    border-radius: calc(var(--radius-card) - 4px);
+  }
+
+  .table-card__head {
+    padding: 2px 3px 10px;
+  }
+
+  .table-card__head p {
+    display: none;
+  }
+
+  .table-scroll {
+    padding-top: 24px;
+    margin-top: -16px;
+  }
+
+  .table-card__foot {
+    margin-top: 12px;
+  }
+
+  .legend {
+    margin-top: 22px;
+  }
+
+  .legend__hint {
+    display: none;
+  }
+
+  .footer__inner {
+    align-items: center;
+    flex-direction: column;
+    gap: 12px;
+    text-align: center;
+  }
+
+  .footer__links {
+    gap: 20px;
+  }
+
+  .modal {
+    padding: 12px;
+  }
+
+  .modal__dialog {
+    max-height: 92vh;
+    grid-template-columns: 1fr;
+    overflow-y: auto;
+  }
+
+  .modal__visual {
+    min-height: 245px;
+    padding: 23px;
+  }
+
+  .modal__symbol-wrap {
+    padding-block: 12px;
+  }
+
+  .modal__symbol {
+    font-size: clamp(4.5rem, 16vw, 6.1rem);
+  }
+
+  .modal__visual::before {
+    width: 260px;
+    height: 260px;
+  }
+
+  .modal__visual::after {
+    width: 350px;
+    height: 350px;
+  }
+
+  .modal__content {
+    overflow: visible;
+    padding: 22px;
+  }
+
+  .modal__close {
+    top: 12px;
+    right: 12px;
+  }
+
+  .fact-grid {
+    gap: 6px;
+  }
+
+  .fact {
+    padding: 8px 10px;
+  }
+}
+
+/* --- Phones -------------------------------------------------------------- */
+@media (max-width: 620px) {
+  :root {
+    --header-height: 64px;
+    --gutter: 16px;
+    --ptable-gap: 3px;
+  }
+
+  .header__inner {
+    gap: 10px;
+  }
+
+  .brand {
+    gap: 8px;
+  }
+
+  .brand__mark {
+    width: 36px;
+    height: 36px;
+    border-radius: 10px;
+  }
+
+  .brand__name {
+    font-size: 19px;
+  }
+
+  .header__actions {
+    gap: 7px;
+  }
+
+  .theme-switcher {
+    gap: 2px;
+    padding: 3px;
+    border-radius: 11px;
+  }
+
+  .theme-btn {
+    width: 31px;
+    height: 31px;
+    border-radius: 8px;
+  }
+
+  .theme-btn .icon {
+    width: 15px;
+    height: 15px;
+  }
+
+  .theme-btn::after {
+    display: none;
+  }
+
+  .github-button {
+    width: 38px;
+    height: 38px;
+    justify-content: center;
+    padding: 0;
+    border-radius: 10px;
+  }
+
+  .github-button span {
+    display: none;
+  }
+
+  .hero {
+    padding-block: 28px 24px;
+  }
+
+  .eyebrow {
+    font-size: 9.5px;
+    letter-spacing: 0.12em;
+  }
+
+  .hero h1 {
+    margin-top: 13px;
+    font-size: clamp(2.15rem, 10.5vw, 3rem);
+    line-height: 1.01;
+  }
+
+  .hero__lede {
+    font-size: 14px;
+    line-height: 1.65;
+  }
+
+  .hero__stats {
+    padding: 14px 16px;
+    border-radius: calc(var(--radius-card) - 3px);
+  }
+
+  .stat__value {
+    font-size: 1.55rem;
+  }
+
+  .stat__label {
+    font-size: 8px;
+  }
+
+  .explorer {
+    padding-bottom: 52px;
+  }
+
+  .toolbar {
+    padding: 8px;
+    border-radius: calc(var(--radius-card) - 6px);
+  }
+
+  .search {
+    min-width: 0;
+    height: 46px;
+    flex-basis: 100%;
+  }
+
+  .search input {
+    font-size: 13px;
+  }
+
+  .search__kbd {
+    display: none;
+  }
+
+  .filter {
+    min-width: 0;
+    flex: 1 1 auto;
+    gap: 0;
+  }
+
+  .filter__label {
+    display: none;
+  }
+
+  .filter .select-wrap {
+    min-width: 0;
+    flex: 1;
+  }
+
+  .select-wrap select {
+    height: 43px;
+    min-width: 0;
+    padding-left: 12px;
+    font-size: 12px;
+  }
+
+  .toolbar__meta {
+    min-width: 0;
+    padding-inline: 1px;
+    gap: 7px;
+  }
+
+  .result-count {
+    font-size: 10.5px;
+  }
+
+  .table-card {
+    padding: 10px;
+  }
+
+  .scroll-hint {
+    font-size: 9px;
+  }
+
+  .table-scroll {
+    padding: 22px 3px 14px;
+    margin: -14px -3px -8px;
+  }
+
+  .table-card__head h2 {
+    font-size: 16px;
+  }
+
+  .table-card__foot {
+    padding: 11px 2px 1px;
+  }
+
+  .table-note {
+    font-size: 9.5px;
+    line-height: 1.5;
+  }
+
+  .table-note--accent {
+    display: none;
+  }
+
+  .legend {
+    padding-top: 18px;
+  }
+
+  .legend__head {
+    margin-bottom: 11px;
+  }
+
+  .legend-chip {
+    height: 29px;
+    padding-inline: 9px;
+    font-size: 9.5px;
+  }
+
+  .legend-chip__dot {
+    width: 7px;
+    height: 7px;
+  }
+
+  .no-results {
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+
+  .no-results__reset {
+    margin-left: 50px;
+  }
+
+  .site-footer {
+    padding-block: 23px 28px;
+  }
+
+  .footer__copy {
+    flex-wrap: wrap;
+    font-size: 10.5px;
+    line-height: 1.6;
+  }
+
+  .footer__links {
+    font-size: 11px;
+  }
+
+  .modal {
+    padding: 8px;
+  }
+
+  .modal__dialog {
+    max-height: 94vh;
+    border-radius: calc(var(--radius-card) + 2px);
+  }
+
+  .modal__visual {
+    min-height: 220px;
+    padding: 20px;
+  }
+
+  .modal__number {
+    font-size: 9px;
+  }
+
+  .modal__symbol {
+    font-size: clamp(4.1rem, 18vw, 5.5rem);
+  }
+
+  .modal__title {
+    font-size: 1.45rem;
+  }
+
+  .modal__content {
+    padding: 18px;
+  }
+
+  .modal__close {
+    width: 34px;
+    height: 34px;
+  }
+
+  .fact dd {
+    font-size: 11.5px;
+  }
+
+  .config-value {
+    font-size: 12px;
+  }
+
+  .fun-fact__text {
+    font-size: 11px;
+  }
+}
+
+/* --- Narrow phones ------------------------------------------------------- */
+@media (max-width: 460px) {
+  .hero__stats {
+    gap: 10px;
+    padding: 13px 14px;
+  }
+
+  .stat {
+    min-width: 0;
+  }
+
+  .stat__value {
+    font-size: 1.4rem;
+  }
+
+  .stat__label {
+    font-size: 7.5px;
+    letter-spacing: 0.09em;
+  }
+
+  .toolbar {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .search {
+    grid-column: 1;
+  }
+
+  .filter {
+    grid-column: 1;
+  }
+
+  .toolbar__meta {
+    grid-column: 1;
+    justify-content: space-between;
+    padding-top: 1px;
+  }
+
+  .no-results__copy {
+    max-width: calc(100% - 50px);
+  }
+
+  .no-results__reset {
+    margin-left: 50px;
+  }
+
+  .fact-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .fact--wide {
+    grid-column: span 1;
+  }
+
+  .modal__visual {
+    min-height: 200px;
+  }
+
+  .modal__symbol {
+    font-size: 4.2rem;
+  }
+
+  .modal__content {
+    padding: 15px;
+  }
+
+  .legend__head h2 {
+    font-size: 9px;
+  }
+}
+
+@media (max-width: 380px) {
+  .brand__mark {
+    width: 33px;
+    height: 33px;
+  }
+
+  .brand__name {
+    font-size: 17px;
+  }
+
+  .theme-btn {
+    width: 28px;
+    height: 28px;
+  }
+
+  .theme-btn .icon {
+    width: 14px;
+    height: 14px;
+  }
+
+  .github-button {
+    width: 34px;
+    height: 34px;
+  }
+
+  .hero h1 {
+    font-size: 2.05rem;
+  }
+
+  .modal__symbol {
+    font-size: 3.8rem;
+  }
+}
+
+/* --- Devices without hover ---------------------------------------------- */
+@media (hover: none) {
+  .theme-btn::after {
+    display: none;
+  }
+
+  .element:hover {
+    transform: none;
+    box-shadow: none;
+  }
+
+  .element:active {
+    transform: scale(0.98);
+  }
+}
+
+/* --- Short screens ------------------------------------------------------- */
+@media (max-height: 700px) and (min-width: 781px) {
+  .modal__dialog {
+    max-height: 94vh;
+  }
+
+  .modal__symbol {
+    font-size: 6rem;
+  }
+
+  .modal__visual {
+    padding-block: 22px;
+  }
+}
